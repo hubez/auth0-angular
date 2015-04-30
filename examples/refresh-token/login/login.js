@@ -6,7 +6,7 @@ angular.module( 'sample.login', [
   $scope.login = function() {
     auth.signin({
       authParams: {
-        scope: 'openid offline_access'
+        scope: 'openid email offline_access'
       }
     });
   }
